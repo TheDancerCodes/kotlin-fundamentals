@@ -7,10 +7,9 @@ fun main(args: Array<String>) {
         var means variable and its type can change.
         val means whatever is assigned is immutable.
      */
-    val taracha = Person()
 
-    //taracha is a val and Name is a var
-    taracha.Name = "Taracha"
+    // Pass in the constructor value as you construct the object.
+    val taracha = Person("Taracha")
 
     // Kotlin uses string interpolation
     println("Name is ${taracha.Name}")
