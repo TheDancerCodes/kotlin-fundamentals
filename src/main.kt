@@ -18,4 +18,13 @@ fun main(args: Array<String>) {
     taracha.Name = "Roger"
 
     println("Name is ${taracha.Name}")
+
+    taracha.display()
+
+    // Passing a function reference (printName)
+    taracha.displayWithLambda(::printName)
+}
+
+fun printName(name: String) {
+    println(name)
 }
